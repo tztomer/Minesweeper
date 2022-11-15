@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/main.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+
+    <title>Minesweeper</title>
+  </head>
+  <body onload="initGame()">
+    <header>
+      <h2>Minesweeper Let't Play</h2>
+      <span>Mins Left</span>
+      <div class="mine-count">0</div>
+    </header>
+
+    <div class="wrapper">
+      <button onclick="startplay()">Start Play</button>
+      <button onclick="diagonal(event)">Clear Left Diagonal ⟍</button>
+    </div>
+
+    <table></table>
+    <div class="popup"><button onclick="startOver">Start Over</button></div>
+
+    <script defer src="js/main.js"></script>
+    <script defer src="js/rendser.js"></script>
+    <script defer src="js/function.js"></script>
+    <script defer src="js/standalon.js"></script>
+
+    <script defer src="js/events.js"></script>
+  </body>
+</html>
